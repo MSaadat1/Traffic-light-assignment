@@ -1,5 +1,5 @@
 import "./App.css";
-import { ClassTrafficLight } from "./ClassTrafficLight";
+import { ClassTrafficLight } from "./ClassTrafficLight.1";
 import { FunctionalTrafficLight } from "./FunctionalTrafficLight";
 
 function App() {
