@@ -2,7 +2,7 @@ import { Component } from "react";
 
 export class ClassTrafficLight extends Component {
   state = {
-    colors: ["red", "green", "yellow"],
+    colors: ["red", "yellow", "green"],
     colorIndex: 0,
   };
 
@@ -18,14 +18,16 @@ export class ClassTrafficLight extends Component {
       <div className="traffic-light-box">
         <h2>Class Traffic Light</h2>
         <div className="traffic-light">
-          <div className={`circle ${currentColor}`}></div>
           <div
-            className={`circle ${currentColor === "red" ? "green" : "red"}`}
+            className={`circle ${currentColor === "red" ? "red" : "black"}`}
           ></div>
           <div
             className={`circle ${
-              currentColor === "yellow" ? "green" : "yellow"
+              currentColor === "yellow" ? "yellow" : "black"
             }`}
+          ></div>
+          <div
+            className={`circle ${currentColor === "green" ? "green" : "black"}`}
           ></div>
         </div>
         <button

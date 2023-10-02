@@ -11,12 +11,14 @@ export const FunctionalTrafficLight = () => {
     <div className="traffic-light-box">
       <h2>Functional Traffic Light</h2>
       <div className="traffic-light">
-        <div className={`circle ${currentColor}`}></div>
         <div
-          className={`circle ${currentColor === "red" ? "green" : "red"}`}
+          className={`circle ${currentColor === "red" ? "red" : "black"}`}
         ></div>
         <div
-          className={`circle ${currentColor === "yellow" ? "green" : "yellow"}`}
+          className={`circle ${currentColor === "yellow" ? "yellow" : "black"}`}
+        ></div>
+        <div
+          className={`circle ${currentColor === "green" ? "green" : "black"}`}
         ></div>
       </div>
       <button
