@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { colors } from "./constants";
 
 export const FunctionalTrafficLight = () => {
-  const colors = ["red", "yellow", "green"];
+ 
   const [colorIndex, setColorIndex] = useState(0);
   const currentColor = colors[colorIndex];
   const changeColor = () => {

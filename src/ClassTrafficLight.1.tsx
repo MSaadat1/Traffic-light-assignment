@@ -1,18 +1,18 @@
 import { Component } from "react";
+import { colors } from "./constants"
 
 export class ClassTrafficLight extends Component {
   state = {
-    colors: ["red", "yellow", "green"],
     colorIndex: 0,
   };
 
   changeColor = () => {
     this.setState({
-      colorIndex: (this.state.colorIndex + 1) % this.state.colors.length,
+      colorIndex: (this.state.colorIndex + 1) % colors.length,
     });
   };
   render() {
-    const currentColor = this.state.colors[this.state.colorIndex];
+    const currentColor = colors[this.state.colorIndex];
 
     return (
       <div className="traffic-light-box">
